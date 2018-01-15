@@ -1,6 +1,12 @@
-# Task8
+# Task7
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.0.
+
+## Description
+
+- New Todo list using Observables^
+  - getTodos return Observable
+  - update, remove, add    pushed Observable
 
 ## Development server
 
