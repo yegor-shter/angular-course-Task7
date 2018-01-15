@@ -1,0 +1,16 @@
+
+<div>
+<table>
+  <tr *ngFor="let todo of todos; let idx = index">
+      <button (click)="delete(todo.id)">X</button>
+    <td><input type="text" name="title-{{idx}}" [(ngModel)]="todo.title"> </td>
+    <td><input type="text" name="status-{{idx}}" [(ngModel)]="todo.status"></td>
+    <td><input type="text" name="text-{{idx}}" [(ngModel)]="todo.text"></td>
+    <td><input [ngModel]="todo.dateCreation | date:'fullDate'" (ngModelChange)="todo.dateCreation=$event"></td>
+    <button (click)="update(todo)"> Update </button>
+    <button (click)="add()">Add new ToDo</button>
+  </tr>
+</table>
+</div>
+
+
